@@ -71,6 +71,7 @@ public class MainActivity extends AppCompatActivity {
                     break;
                 case R.id.buttonStop: // нажатие кнопки "Стоп"
                     startTime = 0L;
+                    timePause = 0L;
                     handler.removeCallbacks(updateTimerThread); // удаление из очереди данного потока
                     stopwatchOut.setText(getString(R.string.messageStop)); // загрузка сообщения о прекращении отсчёта времени
                     break;
